@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer's Hospital - Your One-Stop Computer Service Centre</title>
+    <meta name="description" content="Professional computer repair and service centre offering PC repair, laptop services, spare parts, and technical support.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hospital-alt me-2"></i>Computer's Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spare-parts.html">Spare Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link cart-icon" href="cart.html" title="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge badge bg-danger rounded-pill position-absolute" style="top: 0; right: 0; font-size: 0.7em; display: none;">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="admin/login.html">
+                            <i class="fas fa-user-shield me-1"></i>Admin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Computer's Hospital</h1>
+                    <p class="tagline">Your One-Stop Computer Service Centre</p>
+                    <p class="lead mb-4">Professional computer repair, maintenance, and spare parts sales with expert technicians and quality service guaranteed.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="spare-parts.html" class="btn btn-light btn-lg">
+                            <i class="fas fa-shopping-cart me-2"></i>Shop Spare Parts
+                        </a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-tools me-2"></i>View Services
+                        </a>
+                        <a href="contact.html" class="btn btn-success btn-lg">
+                            <i class="fas fa-phone me-2"></i>Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Welcome to Computer's Hospital</h2>
+                    <p class="lead">We are your trusted partner for all computer-related needs, offering comprehensive repair services and quality spare parts.</p>
+                    <p>With over a decade of experience in the industry, our team of certified technicians provides reliable solutions for both personal and business computer requirements. From simple software installations to complex hardware repairs, we handle it all with precision and care.</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                                <span>Expert Technicians</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                                <span>Quality Guarantee</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                                <span>Fast Service</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-check-circle text-success me-3 fs-4"></i>
+                                <span>Affordable Prices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="height: 100%;">
+                    <div class="text-center">
+                        <img src="images/home page image.jpg" alt="Computer Service Centre" style="height: 100%; width: 100%; object-fit: cover;" class="rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Highlight -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Featured Services</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-desktop service-icon"></i>
+                            <h5 class="card-title">PC Repair & Maintenance</h5>
+                            <p class="card-text">Complete diagnosis and repair of desktop computers, including hardware troubleshooting and system optimization.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-laptop service-icon"></i>
+                            <h5 class="card-title">Laptop Services</h5>
+                            <p class="card-text">Screen replacement, keyboard repair, battery replacement, and comprehensive laptop maintenance services.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-shield-alt service-icon"></i>
+                            <h5 class="card-title">Virus Removal</h5>
+                            <p class="card-text">Complete virus and malware removal, system cleanup, and security software installation for optimal protection.</p>
+                            <a href="services.html" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card bg-primary text-white">
+                        <div class="card-body">
+                            <i class="fas fa-users fs-1 mb-3"></i>
+                            <h3 class="card-title">1000+</h3>
+                            <p class="card-text">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card bg-success text-white">
+                        <div class="card-body">
+                            <i class="fas fa-wrench fs-1 mb-3"></i>
+                            <h3 class="card-title">5000+</h3>
+                            <p class="card-text">Repairs Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card bg-info text-white">
+                        <div class="card-body">
+                            <i class="fas fa-clock fs-1 mb-3"></i>
+                            <h3 class="card-title">10+</h3>
+                            <p class="card-text">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card bg-warning text-white">
+                        <div class="card-body">
+                            <i class="fas fa-star fs-1 mb-3"></i>
+                            <h3 class="card-title">4.9/5</h3>
+                            <p class="card-text">Customer Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Need Computer Repair Services?</h2>
+            <p class="lead mb-4">Get professional diagnosis and repair services for all your computer problems. Contact us today for a free consultation!</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="contact.html" class="btn btn-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>Get Free Quote
+                </a>
+                <a href="spare-parts.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-shopping-cart me-2"></i>Browse Parts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fas fa-hospital-alt me-2"></i>Computer's Hospital</h5>
+                    <p>Your trusted partner for computer repair, maintenance, and spare parts. Professional service with quality guarantee.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="spare-parts.html" class="text-light text-decoration-none">Spare Parts</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li>PC Repair</li>
+                        <li>Laptop Services</li>
+                        <li>Virus Removal</li>
+                        <li>Data Recovery</li>
+                        <li>Hardware Installation</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@computershospital.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Tech Street, Digital City</li>
+                        <li><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM-7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Computer's Hospital. All rights reserved. | Designed for BSc Computer Science Final Year Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Cart-enabled JavaScript -->
+    <script src="js/script_cart.js"></script>
+</body>
+</html>

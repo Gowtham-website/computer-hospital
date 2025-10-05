@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Computer's Hospital</title>
+    <meta name="description" content="Share your experience with Computer's Hospital. Your feedback helps us improve our computer repair services.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-hospital-alt me-2"></i>Computer's Hospital
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spare-parts.html">Spare Parts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item position-relative">
+                        <a class="nav-link cart-icon" href="cart.html" title="Shopping Cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-badge badge bg-danger rounded-pill position-absolute" style="top: 0; right: 0; font-size: 0.7em; display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Customer Feedback</h1>
+                    <p class="lead">Your opinion matters to us</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center bg-transparent">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-light">Home</a></li>
+                            <li class="breadcrumb-item active text-light" aria-current="page">Feedback</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Introduction -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">We Value Your Feedback</h2>
+                    <p class="lead">Your experience and suggestions help us continuously improve our services. Please take a moment to share your thoughts about our computer repair services.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-4 mb-3">
+                            <i class="fas fa-star service-icon text-warning"></i>
+                            <h5>Rate Our Service</h5>
+                            <p>Share your overall experience with our team</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <i class="fas fa-comments service-icon text-primary"></i>
+                            <h5>Tell Us More</h5>
+                            <p>Provide detailed feedback about your visit</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <i class="fas fa-heart service-icon text-success"></i>
+                            <h5>Help Us Improve</h5>
+                            <p>Your suggestions make us better</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-comment-alt me-2"></i>Share Your Experience</h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="feedbackForm" novalidate>
+                                <!-- Personal Information -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="customerName" class="form-label">Your Name *</label>
+                                        <input type="text" class="form-control" id="customerName" name="customerName" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="customerEmail" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="customerEmail" name="customerEmail" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Service Information -->
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="serviceType" class="form-label">Service Received *</label>
+                                        <select class="form-select" id="serviceType" name="serviceType" required>
+                                            <option value="">Select service type...</option>
+                                            <option value="pc-repair">PC Repair & Maintenance</option>
+                                            <option value="laptop-service">Laptop Services</option>
+                                            <option value="virus-removal">Virus Removal & Security</option>
+                                            <option value="data-recovery">Data Recovery</option>
+                                            <option value="software-installation">Software Installation</option>
+                                            <option value="hardware-installation">Hardware Installation</option>
+                                            <option value="spare-parts">Spare Parts Purchase</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select the service type.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="serviceDate" class="form-label">Service Date</label>
+                                        <input type="date" class="form-control" id="serviceDate" name="serviceDate">
+                                    </div>
+                                </div>
+
+                                <!-- Rating Section -->
+                                <div class="mb-4">
+                                    <label class="form-label">Overall Rating *</label>
+                                    <div class="d-flex align-items-center">
+                                        <div class="star-rating me-3">
+                                            <span class="star" data-rating="1"><i class="fas fa-star"></i></span>
+                                            <span class="star" data-rating="2"><i class="fas fa-star"></i></span>
+                                            <span class="star" data-rating="3"><i class="fas fa-star"></i></span>
+                                            <span class="star" data-rating="4"><i class="fas fa-star"></i></span>
+                                            <span class="star" data-rating="5"><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <span id="ratingText" class="text-muted">Click to rate</span>
+                                    </div>
+                                    <input type="hidden" id="rating" name="rating">
+                                    <div class="invalid-feedback d-block rating-error" id="ratingError" style="display: none;">
+                                        Please provide a rating.
+                                    </div>
+                                </div>
+
+                                <!-- Detailed Ratings -->
+                                <div class="row mb-4">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="qualityRating" class="form-label">Service Quality</label>
+                                        <select class="form-select" id="qualityRating" name="qualityRating">
+                                            <option value="">Rate quality...</option>
+                                            <option value="5">Excellent</option>
+                                            <option value="4">Very Good</option>
+                                            <option value="3">Good</option>
+                                            <option value="2">Fair</option>
+                                            <option value="1">Poor</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="speedRating" class="form-label">Service Speed</label>
+                                        <select class="form-select" id="speedRating" name="speedRating">
+                                            <option value="">Rate speed...</option>
+                                            <option value="5">Very Fast</option>
+                                            <option value="4">Fast</option>
+                                            <option value="3">Average</option>
+                                            <option value="2">Slow</option>
+                                            <option value="1">Very Slow</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="priceRating" class="form-label">Price Value</label>
+                                        <select class="form-select" id="priceRating" name="priceRating">
+                                            <option value="">Rate value...</option>
+                                            <option value="5">Excellent Value</option>
+                                            <option value="4">Good Value</option>
+                                            <option value="3">Fair Value</option>
+                                            <option value="2">Overpriced</option>
+                                            <option value="1">Very Expensive</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Feedback Comments -->
+                                <div class="mb-3">
+                                    <label for="feedbackComments" class="form-label">Your Comments *</label>
+                                    <textarea class="form-control" id="feedbackComments" name="feedbackComments" rows="4" required placeholder="Please share your experience with our service. What did you like? What could we improve?"></textarea>
+                                    <div class="invalid-feedback">
+                                        Please provide your feedback comments.
+                                    </div>
+                                </div>
+
+                                <!-- What We Did Well -->
+                                <div class="mb-3">
+                                    <label for="positiveAspects" class="form-label">What did we do well?</label>
+                                    <textarea class="form-control" id="positiveAspects" name="positiveAspects" rows="2" placeholder="Tell us what you liked about our service..."></textarea>
+                                </div>
+
+                                <!-- Areas for Improvement -->
+                                <div class="mb-3">
+                                    <label for="improvements" class="form-label">How can we improve?</label>
+                                    <textarea class="form-control" id="improvements" name="improvements" rows="2" placeholder="Share any suggestions for improvement..."></textarea>
+                                </div>
+
+                                <!-- Recommendation -->
+                                <div class="mb-4">
+                                    <label class="form-label">Would you recommend us to others?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommend" id="recommendYes" value="yes">
+                                        <label class="form-check-label" for="recommendYes">
+                                            <i class="fas fa-thumbs-up text-success me-2"></i>Yes, definitely!
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommend" id="recommendMaybe" value="maybe">
+                                        <label class="form-check-label" for="recommendMaybe">
+                                            <i class="fas fa-hand-paper text-warning me-2"></i>Maybe
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="recommend" id="recommendNo" value="no">
+                                        <label class="form-check-label" for="recommendNo">
+                                            <i class="fas fa-thumbs-down text-danger me-2"></i>No
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Permission for Testimonial -->
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="allowTestimonial" name="allowTestimonial">
+                                        <label class="form-check-label" for="allowTestimonial">
+                                            I give permission to use my feedback as a testimonial on your website (name will be displayed)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Submit Feedback
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Display -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://via.placeholder.com/60x60/007bff/ffffff?text=RS" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Rohit Sharma</h6>
+                                    <small class="text-muted">2 days ago</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"Excellent service! My laptop was completely dead and they brought it back to life. The technicians are very knowledgeable and professional. Highly recommended!"</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-primary">Laptop Repair</span>
+                                <span class="text-success"><i class="fas fa-thumbs-up me-1"></i>Recommends</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://via.placeholder.com/60x60/28a745/ffffff?text=PK" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Priya Kumari</h6>
+                                    <small class="text-muted">1 week ago</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"Great experience with data recovery service. They recovered all my important files from a crashed hard drive. Fair pricing and quick turnaround time."</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-danger">Data Recovery</span>
+                                <span class="text-success"><i class="fas fa-thumbs-up me-1"></i>Recommends</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://via.placeholder.com/60x60/dc3545/ffffff?text=AS" class="rounded-circle me-3" alt="Customer">
+                                <div>
+                                    <h6 class="mb-0">Amit Singh</h6>
+                                    <small class="text-muted">2 weeks ago</small>
+                                </div>
+                                <div class="ms-auto">
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-text">"Professional team with good technical knowledge. Virus removal was done efficiently and they also helped set up proper security. Will visit again for future needs."</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning">Virus Removal</span>
+                                <span class="text-success"><i class="fas fa-thumbs-up me-1"></i>Recommends</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <p class="text-muted">Average Rating: <strong>4.8/5</strong> based on <strong>127</strong> reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Statistics -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container">
+            <h2 class="section-title text-white">Customer Satisfaction Statistics</h2>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fas fa-smile fs-1 mb-3"></i>
+                    <h3>98%</h3>
+                    <p>Customer Satisfaction</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fas fa-heart fs-1 mb-3"></i>
+                    <h3>95%</h3>
+                    <p>Would Recommend</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fas fa-star fs-1 mb-3"></i>
+                    <h3>4.8/5</h3>
+                    <p>Average Rating</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fas fa-redo fs-1 mb-3"></i>
+                    <h3>87%</h3>
+                    <p>Return Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2 class="mb-4">Need Computer Repair Services?</h2>
+            <p class="lead mb-4">Join our satisfied customers and experience professional computer repair services today!</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-phone me-2"></i>Contact Us
+                </a>
+                <a href="services.html" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-tools me-2"></i>View Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fas fa-hospital-alt me-2"></i>Computer's Hospital</h5>
+                    <p>Your trusted partner for computer repair, maintenance, and spare parts. Professional service with quality guarantee.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li><a href="spare-parts.html" class="text-light text-decoration-none">Spare Parts</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Services</h6>
+                    <ul class="list-unstyled">
+                        <li>PC Repair</li>
+                        <li>Laptop Services</li>
+                        <li>Virus Removal</li>
+                        <li>Data Recovery</li>
+                        <li>Hardware Installation</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6>Contact Info</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@computershospital.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Tech Street, Digital City</li>
+                        <li><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM-7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 Computer's Hospital. All rights reserved. | Designed for BSc Computer Science Final Year Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Configuration -->
+    <script src="js/config.js"></script>
+    <!-- Cart-enabled JavaScript -->
+    <script src="js/script_cart.js"></script>
+    
+    <!-- Additional JS for Rating System -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, initializing star rating system...'); // Debug log
+            
+            const stars = document.querySelectorAll('.star');
+            const ratingInput = document.getElementById('rating');
+            const ratingText = document.getElementById('ratingText');
+            const ratingError = document.getElementById('ratingError');
+            let selectedRating = 0; // Track rating in variable as well
+            
+            console.log('Found elements:', { 
+                stars: stars.length, 
+                ratingInput: !!ratingInput, 
+                ratingText: !!ratingText, 
+                ratingError: !!ratingError 
+            }); // Debug log
+            
+            const ratingTexts = {
+                1: 'Poor',
+                2: 'Fair', 
+                3: 'Good',
+                4: 'Very Good',
+                5: 'Excellent'
+            };
+            
+            // Handle star click
+            stars.forEach((star, index) => {
+                star.addEventListener('click', function() {
+                    const rating = parseInt(this.getAttribute('data-rating'));
+                    console.log('Star clicked, rating:', rating); // Debug log
+                    
+                    // Set both the hidden input and our tracking variable
+                    selectedRating = rating;
+                    ratingInput.value = rating;
+                    console.log('Hidden input value set to:', ratingInput.value); // Debug log
+                    console.log('Selected rating variable set to:', selectedRating); // Debug log
+                    
+                    // Update visual feedback
+                    updateStars(rating);
+                    
+                    // Update rating text with more emphasis
+                    ratingText.textContent = `${ratingTexts[rating]} (${rating}/5)`;
+                    ratingText.className = 'text-success fw-bold'; // Make it green and bold
+                    
+                    // Hide error message immediately and reset any error styling
+                    ratingError.style.display = 'none';
+                    const ratingErrorElement = document.getElementById('ratingError');
+                    if (ratingErrorElement) {
+                        ratingErrorElement.style.display = 'none';
+                    }
+                    // Also hide by class name
+                    const ratingErrorByClass = document.querySelector('.rating-error');
+                    if (ratingErrorByClass) {
+                        ratingErrorByClass.style.display = 'none';
+                    }
+                    document.querySelector('.star-rating').style.border = '';
+                    document.querySelector('.star-rating').style.padding = '';
+                    
+                    // Also set a data attribute on the form for extra validation
+                    feedbackForm.setAttribute('data-rating-selected', rating);
+                    
+                    // Debug: Verify error is hidden
+                    console.log('After click - ratingError display:', ratingError.style.display);
+                    console.log('After click - error element found:', !!document.getElementById('ratingError'));
+                });
+                
+                // Handle star hover
+                star.addEventListener('mouseenter', function() {
+                    const rating = parseInt(this.getAttribute('data-rating'));
+                    updateStars(rating);
+                });
+            });
+            
+            // Handle mouse leave from star rating container
+            const starContainer = document.querySelector('.star-rating');
+            starContainer.addEventListener('mouseleave', function() {
+                const currentRating = selectedRating || parseInt(ratingInput.value) || 0;
+                updateStars(currentRating);
+            });
+            
+            // Function to update star visual state
+            function updateStars(rating) {
+                stars.forEach((star, index) => {
+                    const starRating = parseInt(star.getAttribute('data-rating'));
+                    if (starRating <= rating) {
+                        star.classList.add('active');
+                    } else {
+                        star.classList.remove('active');
+                    }
+                });
+            }
+            
+            // Form validation and submission
+            const feedbackForm = document.getElementById('feedbackForm');
+            feedbackForm.addEventListener('submit', async function(e) {
+                e.preventDefault(); // Always prevent default form submission
+                
+                // Try multiple sources for the rating
+                const ratingFromVariable = selectedRating;
+                const ratingFromInput = parseInt(ratingInput.value);
+                const ratingFromAttribute = parseInt(feedbackForm.getAttribute('data-rating-selected'));
+                const rating = ratingFromVariable || ratingFromInput || ratingFromAttribute || 0;
+                
+                console.log('Form submission - Rating from variable:', ratingFromVariable); // Debug log
+                console.log('Form submission - Rating from input:', ratingFromInput); // Debug log
+                console.log('Form submission - Rating from attribute:', ratingFromAttribute); // Debug log
+                console.log('Form submission - Final rating:', rating); // Debug log
+                
+                if (!rating || rating < 1 || rating > 5) {
+                    console.log('Rating validation failed:', rating); // Debug log
+                    ratingError.style.display = 'block';
+                    ratingError.textContent = 'Please provide a rating by clicking on the stars above.';
+                    
+                    // Make the star container more prominent
+                    document.querySelector('.star-rating').style.border = '2px solid red';
+                    document.querySelector('.star-rating').style.padding = '10px';
+                    document.querySelector('.star-rating').style.borderRadius = '5px';
+                    
+                    // Scroll to rating section
+                    document.querySelector('.star-rating').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    
+                    setTimeout(() => {
+                        document.querySelector('.star-rating').style.border = '';
+                        document.querySelector('.star-rating').style.padding = '';
+                    }, 3000);
+                    
+                    return;
+                }
+                
+                // Hide any existing error and reset styling
+                ratingError.style.display = 'none';
+                document.querySelector('.star-rating').style.border = '';
+                document.querySelector('.star-rating').style.padding = '';
+                
+                // Collect form data
+                const formData = new FormData(feedbackForm);
+                const data = {
+                    name: formData.get('customerName'),
+                    email: formData.get('customerEmail'),
+                    serviceType: formData.get('serviceType'),
+                    serviceDate: formData.get('serviceDate'),
+                    rating: parseInt(rating), // Use the rating from hidden input
+                    qualityRating: formData.get('qualityRating') ? parseInt(formData.get('qualityRating')) : null,
+                    speedRating: formData.get('speedRating') ? parseInt(formData.get('speedRating')) : null,
+                    priceRating: formData.get('priceRating') ? parseInt(formData.get('priceRating')) : null,
+                    message: formData.get('feedbackComments'),
+                    positiveAspects: formData.get('positiveAspects'),
+                    improvements: formData.get('improvements'),
+                    recommend: formData.get('recommend'),
+                    allowTestimonial: formData.get('allowTestimonial') === 'on'
+                };
+                
+                console.log('Submitting feedback data:', data); // Debug log
+                
+                // Show loading state
+                const submitBtn = feedbackForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Submitting...';
+                submitBtn.disabled = true;
+                
+                try {
+                    // Submit to API
+                    const response = await makeApiRequest(API_CONFIG.ENDPOINTS.FEEDBACK, {
+                        method: 'POST',
+                        body: JSON.stringify(data)
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        // Show success message
+                        showFeedbackSuccess();
+                        feedbackForm.reset();
+                        // Reset stars and rating
+                        selectedRating = 0;
+                        updateStars(0);
+                        ratingInput.value = '';
+                        ratingText.textContent = 'Click to rate';
+                        ratingText.className = 'text-muted'; // Reset styling
+                        feedbackForm.removeAttribute('data-rating-selected');
+                    } else {
+                        throw new Error(result.message || 'Failed to submit feedback');
+                    }
+                } catch (error) {
+                    console.error('Feedback submission error:', error);
+                    showFeedbackError('Failed to submit feedback. Please try again.');
+                } finally {
+                    // Restore button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            });
+            
+            // Success message function
+            function showFeedbackSuccess() {
+                const successAlert = document.createElement('div');
+                successAlert.className = 'alert alert-success alert-dismissible fade show mt-3';
+                successAlert.innerHTML = `
+                    <i class="fas fa-check-circle me-2"></i>
+                    <strong>Thank you!</strong> Your feedback has been submitted successfully. We appreciate your time and input.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                feedbackForm.parentNode.insertBefore(successAlert, feedbackForm);
+                
+                // Auto dismiss after 5 seconds
+                setTimeout(() => {
+                    if (successAlert.parentNode) {
+                        successAlert.remove();
+                    }
+                }, 5000);
+            }
+            
+            // Error message function
+            function showFeedbackError(message) {
+                const errorAlert = document.createElement('div');
+                errorAlert.className = 'alert alert-danger alert-dismissible fade show mt-3';
+                errorAlert.innerHTML = `
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <strong>Error!</strong> ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                feedbackForm.parentNode.insertBefore(errorAlert, feedbackForm);
+                
+                // Auto dismiss after 5 seconds
+                setTimeout(() => {
+                    if (errorAlert.parentNode) {
+                        errorAlert.remove();
+                    }
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>

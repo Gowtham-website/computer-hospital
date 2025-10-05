@@ -1,7 +1,7 @@
 // Admin Panel JavaScript for Computer's Hospital
 
 // Auto-detect API base URL
-const API_BASE_URL = window.location.hostname === 'localhost' ? 'https://gowtham1.pythonanywhere.com/api' : '/api';
+const API_BASE_URL = 'https://gowtham1.pythonanywhere.com/api'
 let authToken = localStorage.getItem('adminToken');
 
 function updateDashboardStats(stats) {
@@ -2372,3 +2372,4 @@ window.markRequestComplete = markRequestComplete;
 window.approveFeedback = approveFeedback;
 window.rejectFeedback = rejectFeedback;
 window.updateFeedbackFromModal = updateFeedbackFromModal;
+
